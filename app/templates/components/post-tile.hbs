@@ -1,0 +1,7 @@
+<li>{{#link-to 'post' post.id}}${{post.price}} - {{post.title}} Type: {{post.category.name}} {{/link-to}}
+  {{#if isImageShowing}}
+    <p><img src={{post.image}} {{action 'imageHide'}}></p>
+  {{else}}
+    <button {{action 'imageShow'}}>Image</button>
+  {{/if}}
+</li>

@@ -1,0 +1,11 @@
+<h1>Welcome to the Announcement Page</h1>
+
+<ul>
+  {{#each model as |announcement|}}
+     <li>{{announcement.message}} {{announcement.priority}} {{announcement.type}}</li>
+
+     
+  {{/each}}
+</ul>
+
+{{#link-to 'index'}}Return to home.{{/link-to}}

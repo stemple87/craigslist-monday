@@ -1,0 +1,11 @@
+<h4>Location: {{fullLocation}}</h4>
+
+<h3>Posts available in {{category.name}}:</h3>
+
+<ul>
+  {{#each sortedPosts as |post|}}
+    {{post-tile post=post}}
+  {{/each}}
+</ul>
+
+<button {{action 'destroyCategory' category}}>Delete Category</button>

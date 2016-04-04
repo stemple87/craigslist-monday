@@ -1,0 +1,25 @@
+<h1> Categories </h1>
+
+<h2> Available Posts </h2>
+
+<ul>
+  {{#each model.posts as |post|}}
+    {{post-tile post=post}} {{post-cost post}}
+  {{/each}}
+</ul>
+
+
+<h2> Categories </h2>
+
+<ul>
+  {{#each model.cities as |category|}}
+    <li>{{category-popularity category}}{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{new-category categoryToSave="saveCategory"}}
+
+<hr>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}

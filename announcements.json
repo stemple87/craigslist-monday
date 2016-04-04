@@ -1,0 +1,11 @@
+{
+  "announcements" : [ {
+    "From" : "Local People",
+    "Priority" : "Low",
+    "Type" : "Weather"
+  }, {
+    "From" : "News Stations",
+    "Priority" : "High",
+    "Type" : "Politics"
+  } ]
+}
