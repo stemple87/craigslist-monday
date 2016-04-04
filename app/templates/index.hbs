@@ -8,6 +8,12 @@
   {{/each}}
 </ul>
 
+<ul>
+  {{#each model.users as |user|}}
+    <p>user.username LSKDJFS:DLKF:SDLK</p>
+  {{/each}}
+</ul>
+
 
 <h2> Categories </h2>
 
@@ -21,5 +27,8 @@
 
 <hr>
 
+
+{{user-update update=update}}
+<hr>
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}

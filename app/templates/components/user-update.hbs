@@ -1,0 +1,19 @@
+{{#if updateUserForm}}
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="admin">Admin</label>
+          {{input value=admin id="admin" placeholder=post.admin}}
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          {{input value=password id="password" placeholder=post.password.name}}
+        </div>
+
+        <button {{action 'update' user}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'updateUserForm'}}>Admin Login</button>
+{{/if}}
