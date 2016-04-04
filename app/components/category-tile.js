@@ -6,9 +6,9 @@ export default Ember.Component.extend({
     return this.get('category.name') + ', ' + this.get('category.country');
   }),
 
-  sortBy: ['cost:asc'],
-  sortedPosts: Ember.computed.sort('category.posts', 'sortBy'),
-  
+  sortById: ['id:desc'],
+  sortedPosts: Ember.computed.sort('category.posts', 'sortById'),
+
   actions: {
     destroyCategory(category) {
       if(confirm('Are you sure you want to delete this category forever? ever ever!')) {
